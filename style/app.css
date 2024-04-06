@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 100vh;
+    background-color: #2979FF;
+    /* padding: 24px; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 1100px;
+    width: 100%;
+    height: 750px;
+    margin: auto;
+    border-radius: 23px;
+}
+
+.cricle-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #3F51B5;
+    text-align: center;
+    line-height: 33px;
+    color: #fff;
+    position: absolute;
+    top: 17%;
+    left: 21.8%;
+    font-size: 18px;
+}
+
+.title-logo {
+    position: absolute;
+    top: 17%;
+    left: 38%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.header {
+    width: 270px;
+    background: var(--bg-black-100);
+    position: absolute;
+    left: 20%;
+    top: -30px;
+    /* padding: 30px; */
+    /* margin-bottom: 45px; */
+    height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+}
+
+.header .nav li {
+    margin-top: 35px;
+}
+
+.header .nav li a {
+    margin-bottom: 30px;
+    color: #424242;
+    font-size: 19px;
+}
+
+.header .nav li a.active {
+    margin-bottom: 30px;
+    color: #2979FF;
+}
+
+.header .nav li a.active::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #2979FF;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 257px;
+}
+
+.search-bar {
+    position: relative;
+    background-color: #fff;
+}
+
+.header .nav li a i {
+    font-size: 25px;
+}
+
+body.dark-mode {
+    background-color: #f80000;
+    color: #000000;
+}
+
+.search-bar {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.search-bar .input-wrapper {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.box.dark-mode .box1 {
+    background-color: #0D47A1;
+    color: #FFF;
+}
+
+.box.dark-mode .box2 {
+    background-color: #FFD54F;
+    color: #FFF;
+}
+
+.box.dark-mode .box3 {
+    background-color: #6A1B9A;
+    color: #FFF;
+}
+
+
+
+.container.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.search-bar.dark-mode {
+    background-color: #000000;
+    color: #000000;
+}
+
+.test {
+    position: absolute;
+    left: 210px;
+    top: 717px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+label:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+input:checked+label {
+    background: #242424;
+}
+
+input:checked+label:after {
+    right: 12px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+label,
+label:after {
+    transition: 0.3s;
+}
+
+.line {
+    width: 2px;
+    height: 65%;
+    position: absolute;
+    left: 648px;
+    top: 135px;
+    background-color: #000000;
+}
+
+.menu {
+    font-size: 38px;
+    position: absolute;
+    left: 668px;
+    top: 125px;
+}
+
+.search-bar {
+    position: absolute;
+    width: 32%;
+    height: 50px;
+    left: 748px;
+    top: 125px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 13px;
+    top: 8px;
+    font-size: 30px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    position: absolute;
+    top: 16px;
+    left: 60px;
+    color: black;
+}
+
+.search-input::placeholder {
+    font-size: 17px;
+}
+
+.dashboard {
+    display: flex;
+    position: absolute;
+    left: 672px;
+    top: 250px;
+}
+
+.dashboard i {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #2979FF;
+    color: #fff;
+    text-align: center;
+    padding-top: 5.5px;
+    font-size: 24px;
+}
+
+.dashboard h2 {
+    padding-left: 13px;
+}
+
+.box {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    left: 672px;
+    top: 300px;
+}
+
+.box1 {
+    width: 240px;
+    height: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box .box1 i {
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.box .box1 h4 {
+    font-size: 15px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.box .box1 p {
+    font-size: 30px;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.box2 {
+    width: 240px;
+    height: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box .box2 i {
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.box .box2 h4 {
+    font-size: 15px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.box .box2 p {
+    font-size: 30px;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.box3 {
+    width: 240px;
+    height: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box .box3 i {
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.box .box3 h4 {
+    font-size: 15px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.box .box3 p {
+    font-size: 30px;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.recent {
+    display: flex;
+    position: absolute;
+    left: 672px;
+    top: 480px;
+}
+
+.recent i {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #2979FF;
+    color: #fff;
+    text-align: center;
+    padding-top: 5.5px;
+    font-size: 24px;
+}
+
+.recent h2 {
+    padding-left: 13px;
+}
+
+.row {
+    position: absolute;
+    left: 672px;
+    top: 550px;
+}
+
+.row {
+    display: flex;
+    gap: 62px;
+
+}
+
+.sh_con p {
+    margin-top: 20px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 479px) {
+    .sh_con {
+        display: block;
+    }
+
+    .sh h4:after {
+        display: none;
+    }
+}

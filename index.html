@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css -->
+    <link rel="stylesheet" href="./style/app.css">
+</head>
+
+<body>
+    <section class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="cricle-logo">CL</div>
+                <h2 class="title-logo">Codinglab</h2>
+            </div>
+            <ul class="nav" style="list-style: none;">
+                <li><a href="#" class="active"><i class='bx bx-home-alt'></i> Dashboard</a></li>
+                <li><a href="#"><i class='bx bx-conversation'></i> Content</a></li>
+                <li><a href="#"><i class='bx bx-bar-chart-square'></i> Analytics</a></li>
+                <li><a href="#"><i class='bx bx-like'></i> Likes</a></li>
+                <li><a href="#"><i class='bx bx-chat'></i> Comments</a></li>
+                <li><a href="#"><i class='bx bx-share bx-flip-horizontal'></i> Share</a></li>
+                <hr>
+                <li><a href="#"><i class='bx bx-log-in'></i> Logout</a></li>
+                <li><a href="#"><i class='bx bx-moon'></i> Dark Mode</a></li>
+                <div class="test">
+                    <input class="dark" type="checkbox" id="toggleSwitch">
+                    <label for="toggleSwitch"></label>
+                    <div class="background"></div>
+                </div>
+            </ul>
+
+        </header>
+
+        <!-- Home -->
+        <div class="line"></div>
+        <section class="body">
+            <div class="menu">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="search-bar">
+                <form action="#">
+                    <div class="input-wrapper">
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <input type="search" class="search-input" placeholder="Search here...">
+                </form>
+            </div>
+            <div class="dashboard">
+                <i class='bx bxs-dashboard'></i>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="box dark-mode">
+                <div class="box1">
+                    <i class='bx bx-like'></i>
+                    <h4>Total Likes</h4>
+                    <p>50,120</p>
+                </div>
+                <div class="box2">
+                    <i class='bx bx-chat'></i>
+                    <h4>Comments</h4>
+                    <p>25,120</p>
+                </div>
+                <div class="box3">
+                    <i class='bx bx-share bx-flip-horizontal'></i>
+                    <h4>Total Share</h4>
+                    <p>10,320</p>
+                </div>
+            </div>
+            
+            <div class="recent">
+                <i class='bx bxs-calendar-alt'></i>
+                <h2>Recent Activity</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 sh">
+                    <h4>Name</h4>
+                    <div class="sh_con">
+                        <p>
+                            Prem Shahi
+                        </p>
+                        <p>
+                            Deepa Chand
+                        </p>
+                        <p>
+                            Prakash Shahi
+                        </p>
+                        <p>
+                            Manisha Chand
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 sh">
+                    <h4>Email</h4>
+                    <div class="sh_con">
+                        <p>premshahi@gmail.com</p>
+                        <p>deepachand@gmail.com</p>
+                        <p>prakashshahi@gmail.com</p>
+                        <p>manishachand@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 sh">
+                    <h4>Joined</h4>
+                    <div class="sh_con">
+                        <p>2022-02-12</p>
+                        <p>2022-02-12</p>
+                        <p>2022-02-12</p>
+                        <p>2022-02-12</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 sh">
+                    <h4>TYPE</h4>
+                    <div class="sh_con">
+                        <p>New</p>
+                        <p>Member</p>
+                        <p>New</p>
+                        <p>Member</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 sh">
+                    <h4>Status</h4>
+                    <div class="sh_con">
+                        <p>Liked</p>
+                        <p>Shared</p>
+                        <p>Liked</p>
+                        <p>Shared</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/style-switcher.js"></script>
+</body>
+
+</html>
